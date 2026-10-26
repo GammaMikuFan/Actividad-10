@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1 - Ejercicios 1 al 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container my-4">
+        <a href="index.html" class="btn btn-outline-secondary mb-3"> Volver al Índice</a>
+        <h1 class="mb-4 text-primary">Página 1: Condicionales y Estructuras de Control</h1>
+
+        <div class="row g-4">
+            <!-- Ejercicio 1 -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm p-3">
+                    <h4>1. Votación por Sección</h4>
+                    <div class="mb-3">
+                        <label class="form-label">Selecciona tu sección:</label>
+                        <select id="voto" class="form-select">
+                            <option value="norte">Norte</option>
+                            <option value="sur">Sur</option>
+                            <option value="centro">Centro</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" onclick="ejercicio1_Voto()">Emitir Voto</button>
+                    <p id="res1" class="mt-3 fw-bold text-success"></p>
+                </div>
+            </div>
+
+            <!-- Ejercicio 2 -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm p-3">
+                    <h4>2. Suma de Números Positivos</h4>
+                    <div class="mb-3">
+                        <label class="form-label">Número inicial:</label>
+                        <input type="number" id="numPositivo" class="form-control" placeholder="Ingresa el primer número">
+                    </div>
+                    <button class="btn btn-primary" onclick="ejercicio2_sumarPositivos()">Iniciar Captura</button>
+                    <p id="res2" class="mt-3 fw-bold text-success"></p>
+                </div>
+            </div>
+
+            <!-- Ejercicio 3 -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm p-3">
+                    <h4>3. Ordenar 3 Números</h4>
+                    <div class="mb-2"><input type="number" id="num1" class="form-control" placeholder="Número 1"></div>
+                    <div class="mb-2"><input type="number" id="num2" class="form-control" placeholder="Número 2"></div>
+                    <div class="mb-3"><input type="number" id="num3" class="form-control" placeholder="Número 3"></div>
+                    <button class="btn btn-primary" onclick="ejercicio3_ordenarNumeros()">Ordenar</button>
+                    <p id="res3" class="mt-3 fw-bold text-success"></p>
+                </div>
+            </div>
+
+            <!-- Ejercicio 4 -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm p-3">
+                    <h4>4. Calcular Importe Neto</h4>
+                    <div class="mb-3">
+                        <input type="number" id="importeBruto" class="form-control" placeholder="Importe Bruto">
+                    </div>
+                    <button class="btn btn-primary" onclick="ejercicio4_calcularImporteNeto()">Calcular Neto</button>
+                    <p id="res4" class="mt-3 fw-bold text-success"></p>
+                </div>
+            </div>
+
+            <!-- Ejercicio 5 -->
+            <div class="col-md-12">
+                <div class="card shadow-sm p-3">
+                    <h4>5. Calcular Sueldo por Antigüedad</h4>
+                    <div class="mb-3">
+                        <input type="number" id="aniosEmpresa" class="form-control" placeholder="Años en la empresa">
+                    </div>
+                    <button class="btn btn-primary" onclick="ejercicio5_calcularSueldo()">Calcular Sueldo</button>
+                    <p id="res5" class="mt-3 fw-bold text-success"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./JS/funciones.js"></script>
+</body>
+</html>
